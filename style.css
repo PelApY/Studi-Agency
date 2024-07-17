@@ -9,10 +9,42 @@ html {
 
 /* Custom #header */
 header.bg-header {
-    background: url("./img/pexels-yankrukov-4458421.jpg");
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./img/pexels-yankrukov-4458421.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
     height: 100vh;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.25rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.15rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 2.25rem;
+    }
 }
