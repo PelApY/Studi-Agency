@@ -21,6 +21,15 @@ section#formations {
     background: linear-gradient(135deg, #f4e115 0%, #f36e2169 100%);
 }
 
+section#alternances {
+    background-image: url(./img/pexels-fauxels-3183183.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     header h1 {
