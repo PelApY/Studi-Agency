@@ -18,8 +18,7 @@ header.bg-header {
 }
 
 section#formations {
-    height: 100vh;
-    background: linear-gradient(135deg, #f4e115 0%, #f36e21 100%);
+    background: linear-gradient(135deg, #f4e115 0%, #f36e2169 100%);
 }
 
 /* Small devices (landscape phones, 576px and up) */
