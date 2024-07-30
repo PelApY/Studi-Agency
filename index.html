@@ -737,19 +737,19 @@
                             <!-- Name input -->
                             <div class="col-md-6 mb-4">
                               <label for="inputFirstName" class="form-label">Nom</label>
-                              <input type="text" class="form-control" id="inputFirstName" placeholder="First name">
+                              <input type="text" class="form-control" id="inputFirstName" placeholder="First name" required>
                             </div>
 
                             <!-- lastName input -->
                             <div class="col-md-6 mb-4">
                               <label for="inputLastName" class="form-label">Prénom</label>
-                              <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+                              <input type="text" class="form-control" id="inputLastName" placeholder="Last name" required>
                             </div>
 
                             <!-- Email input -->
                             <div class="col-md-6 mb-4">
                               <label for="inputEmail" class="form-label">Email</label>
-                              <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+                              <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
                             </div>
 
                             <!-- Select Menu Category -->
@@ -766,7 +766,7 @@
                             <!-- Message input -->
                             <div class="col-12 mb-4">
                                 <label for="messageContent" class="form-label">Message</label>
-                                <textarea class="form-control" id="messageContent" rows="4"></textarea>
+                                <textarea class="form-control" id="messageContent" rows="4" required></textarea>
                             </div>
 
                             <!-- Select Menu -->
@@ -796,7 +796,7 @@
                             </div>
 
                             <!-- Submit button -->
-                            <button type="button" class="btn btn-outline-dark btn-md btn-block mb-4 w-50">Envoyer</button>
+                            <button type="submit" class="btn btn-outline-dark btn-md btn-block mb-4 w-50">Envoyer</button>
                         </form>
                     </div>
 
@@ -810,6 +810,28 @@
                 </div>
             </div>
         </section>
+
+        <!-- footer -->
+        <footer class="bg-body-tertiary">
+            <div class="text-center fw-bold">
+                <ul class="list-inline">
+                    <!-- Copyright -->
+                    <li class="list-inline-item">© 2024 | PelApY</li>
+                    <!-- Facebook -->
+                    <li class="list-inline-item"><a data-mdb-ripple-init class="btn btn-link text-body" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a></li>
+                    <!-- Twitter -->
+                    <li class="list-inline-item"><a data-mdb-ripple-init class="btn btn-link text-body" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a></li>
+                    <!-- Google -->
+                    <li class="list-inline-item"><a data-mdb-ripple-init class="btn btn-link text-body" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a></li>
+                    <!-- Instagram -->
+                    <li class="list-inline-item"><a data-mdb-ripple-init class="btn btn-link text-body" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a></li>
+                    <!-- Linkedin -->
+                    <li class="list-inline-item"><a data-mdb-ripple-init class="btn btn-link text-body" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a></li>
+                    <!-- Github -->
+                    <li class="list-inline-item"><a data-mdb-ripple-init class="btn btn-link text-body" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </footer>
     </main>
 
     <!-- scripts -->
