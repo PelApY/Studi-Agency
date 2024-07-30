@@ -27,7 +27,7 @@ section#alternances {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    height: 100vh;
+    height: auto;
 }
 
 /* Small devices (landscape phones, 576px and up) */
