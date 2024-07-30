@@ -7,6 +7,80 @@ html {
     padding: 0;
 }
 
+/* custom navbar */
+#mainNav {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#mainNav .navbar-brand {
+    font-weight: 700;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.75rem 0;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover,
+#mainNav .navbar-nav .nav-item .nav-link:active {
+    color: #FF8766;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #FF8766 !important;
+}
+
+/* custom navbar */
+@media (min-width: 992px) {
+    #mainNav {
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        padding: 0 1rem;
+    }
+
+    #mainNav .navbar-nav .nav-item:last-child .nav-link {
+        padding-right: 0;
+    }
+
+    #mainNav.navbar-scrolled {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: #fff;
+    }
+
+    #mainNav.navbar-scrolled .navbar-brand:hover {
+        color: #f4623a;
+    }
+
+    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+        color: #FF8766;
+    }
+}
+
+/* Custom link */
+a:hover {
+    color: #FF8766;
+    text-decoration: none;
+}
+
+a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.btn.disabled,
+fieldset:disabled a.btn {
+    pointer-events: none;
+}
+
 /* Custom #header */
 header.bg-header {
     background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("./img/pexels-yankrukov-4458421.jpg");
@@ -17,10 +91,12 @@ header.bg-header {
     height: 100vh;
 }
 
+/* Custom #formations */
 section#formations {
     background: linear-gradient(135deg, #f4e115 0%, #f36e2169 100%);
 }
 
+/* Custom #alternances */
 section#alternances {
     background-image: url(./img/pexels-fauxels-3183183.jpg);
     background-position: center;
@@ -30,9 +106,126 @@ section#alternances {
     height: auto;
 }
 
+/* Custom #contact */
 section#contact {
     background: linear-gradient(135deg, #f4e115 0%, #f36e2169 100%);
     height: auto;
+}
+
+/* custom button */
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+}
+
+.btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.btn:focus,
+.btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+.btn.disabled,
+.btn:disabled {
+    opacity: 0.65;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #FF8766;
+    border-color: #FF8766;
+}
+
+.btn-primary:hover {
+    color: #FFF;
+    background-color: #f4623a;
+    border-color: #FFE3CD;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #5a6268;
+    background-color: #FFE3CD;
+    border-color: #FFF;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #fff;
+    background-color: #FF8766;
+    border-color: #FF8766;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #FF8766;
+    background-color: #C2ABAF;
+    border-color: #C2ABAF;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.7);
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #C2ABAF;
+    border-color: #FFE3CD;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #C2ABAF;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+    color: #5a6268;
+    background-color: #FFE3CD;
+    border-color: #FFF;
+}
+
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 /* Small devices (landscape phones, 576px and up) */
