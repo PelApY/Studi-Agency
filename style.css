@@ -30,6 +30,11 @@ section#alternances {
     height: auto;
 }
 
+section#contact {
+    background: linear-gradient(135deg, #f4e115 0%, #f36e2169 100%);
+    height: auto;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     header h1 {
