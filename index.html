@@ -26,19 +26,19 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-0" id="mainNav">
             <div class="container">
-                <a class="navbar-brand mx-4 p-0" href="#page-top">
-                    <img src="./img/logo.png"  width="50" height="50" class="" alt="Logo Studi Agency">
+                <a class="navbar-brand mx-4 p-1" href="#page-top">
+                    <img src="./img/logo.png"  width="40" height="40" class="" alt="Logo Studi Agency">
                 </a>
             
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#formations">Formations</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#alternances">Alternances</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#formations">Formations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#alternances">Alternances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -839,7 +839,36 @@
             <div class="text-center fw-bold">
                 <ul class="list-inline p-2">
                     <!-- Copyright -->
-                    <li class="list-inline-item">© 2024 | PelApY</li>
+                    <li class="list-inline-item">© 2024 | PelApY |<!-- Button to Open the Modal -->
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#myModal">Mentions légales</a>
+                        <!-- The Modal -->
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Modal Title Graphic Design</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <p class="">Modal body.. <br>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content. <br>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content. <br>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content. <br>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content. <br>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content. <br>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </p>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <!-- Facebook -->
                     <li class="list-inline-item"><a data-mdb-ripple-init class="btn btn-link text-body" href="#!" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a></li>
                     <!-- Twitter -->

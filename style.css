@@ -7,7 +7,7 @@ html {
     padding: 0;
 }
 
-/* custom navbar */
+/* Custom navbar */
 #mainNav {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
@@ -31,7 +31,7 @@ html {
     color: #FF8766 !important;
 }
 
-/* custom navbar */
+/* Query navbar */
 @media (min-width: 992px) {
     #mainNav {
         box-shadow: none;
@@ -44,19 +44,6 @@ html {
 
     #mainNav .navbar-nav .nav-item:last-child .nav-link {
         padding-right: 0;
-    }
-
-    #mainNav.navbar-scrolled {
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        background-color: #fff;
-    }
-
-    #mainNav.navbar-scrolled .navbar-brand:hover {
-        color: #f4623a;
-    }
-
-    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-        color: #FF8766;
     }
 }
 
@@ -112,7 +99,7 @@ section#contact {
     height: auto;
 }
 
-/* custom button */
+/* Custom button */
 @media (prefers-reduced-motion: reduce) {
     .btn {
         transition: none;
@@ -177,46 +164,6 @@ section#contact {
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.7);
-}
-
-.btn-secondary {
-    color: #fff;
-    background-color: #C2ABAF;
-    border-color: #FFE3CD;
-}
-
-.btn-secondary:hover {
-    color: #fff;
-    background-color: #5a6268;
-    border-color: #C2ABAF;
-}
-
-.btn-secondary:focus,
-.btn-secondary.focus {
-    color: #5a6268;
-    background-color: #FFE3CD;
-    border-color: #FFF;
-}
-
-.btn-secondary.disabled,
-.btn-secondary:disabled {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
-}
-
-.btn-secondary:not(:disabled):not(.disabled):active,
-.btn-secondary:not(:disabled):not(.disabled).active,
-.show>.btn-secondary.dropdown-toggle {
-    color: #fff;
-    background-color: #545b62;
-    border-color: #4e555b;
-}
-
-.btn-secondary:not(:disabled):not(.disabled):active:focus,
-.btn-secondary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-secondary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
 }
 
 #btn-back-to-top {
