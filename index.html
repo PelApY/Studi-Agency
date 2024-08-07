@@ -756,67 +756,69 @@
                     <div class="col-lg-6 col-sm-12 mb-3">
                         <h2 class="text-center text-uppercase fw-bold mb-3">Nous contacter</h2>
                         <!-- Formulaire -->
-                        <form class="row m-3 p-3 d-flex justify-content-center bg-light border border-dark rounded">
+                        <form class="row m-3 p-3 d-flex justify-content-center bg-light border border-dark rounded" method="POST" action="#">
                             <!-- Name input -->
                             <div class="col-md-6 mb-4">
                               <label for="inputFirstName" class="form-label">Nom</label>
-                              <input type="text" class="form-control" id="inputFirstName" placeholder="First name" required>
+                              <input type="text" class="form-control" id="inputFirstName" name="inputFirstName" placeholder="First name" required>
                             </div>
 
                             <!-- lastName input -->
                             <div class="col-md-6 mb-4">
                               <label for="inputLastName" class="form-label">Prénom</label>
-                              <input type="text" class="form-control" id="inputLastName" placeholder="Last name" required>
+                              <input type="text" class="form-control" id="inputLastName" name="inputLastName" placeholder="Last name" required>
                             </div>
 
                             <!-- Email input -->
                             <div class="col-md-6 mb-4">
                               <label for="inputEmail" class="form-label">Email</label>
-                              <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+                              <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="name@example.com" required>
                             </div>
 
                             <!-- Select Menu Category -->
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-6 mb-4">
                                 <label for="inputCategory" class="form-label">Catégorie</label>
-                                <select class="form-select form-select" aria-label="Select example">
-                                    <option selected disabled>Catégorie</option>
-                                    <option value="1">Formations</option>
-                                    <option value="2">Alternances</option>
-                                    <option value="3">Administration</option>
+                                <select class="form-select form-select" id="inputCategory" name="inputCategory" aria-label="Select example">
+                                    <option selected disabled></option>
+                                    <option value="Formations">Formations</option>
+                                    <option value="Alternances">Alternances</option>
+                                    <option value="Administration">Administration</option>
                                 </select>
                             </div>
 
                             <!-- Message input -->
                             <div class="col-12 mb-4">
                                 <label for="messageContent" class="form-label">Message</label>
-                                <textarea class="form-control" id="messageContent" rows="4" required></textarea>
+                                <textarea class="form-control" id="messageContent" name="messageContent" rows="4" required></textarea>
                             </div>
 
                             <!-- Select Menu -->
-                            <div class="col-md-6 mb-3">
-                                <select class="form-select form-select" aria-label="Select example">
-                                    <option selected disabled>Secteur</option>
-                                    <option value="1">Graphic Design</option>
-                                    <option value="2">Web Developer</option>
-                                    <option value="3">Digital Manager</option>
+                            <div class="col-md-6 mb-4">
+                                <label for="inputSecteur" class="form-label">Secteur</label>
+                                <select class="form-select form-select" id="inputSecteur" name="inputSecteur" aria-label="Select secteur">
+                                    <option selected disabled></option>
+                                    <option value="Graphic Design">Graphic Design</option>
+                                    <option value="Web Developer">Web Developer</option>
+                                    <option value="Digital Manager">Digital Manager</option>
                                 </select>
                             </div>
 
                             <!-- Select Menu -->
-                            <div class="col-md-6 mb-3">
-                                <select class="form-select form-select" aria-label="Select example">
-                                    <option selected disabled>Région</option>
-                                    <option value="1">Auvergne-Rhône-Alpes</option>
-                                    <option value="2">Île de France</option>
-                                    <option value="3">Occitanie</option>
+                            <div class="col-md-6 mb-4">
+                                <label for="inputRegion" class="form-label">Region</label>
+                                <select class="form-select form-select" id="inputRegion" name="inputRegion" aria-label="Select region">
+                                    <option selected disabled></option>
+                                    <option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
+                                    <option value="Île de France">Île de France</option>
+                                    <option value="Occitanie">Occitanie</option>
                                 </select>
                             </div>
 
                             <!-- Checkbox -->
-                            <div class="form-check d-flex justify-content-center mb-4">
+                            <!-- <div class="form-check d-flex justify-content-center mb-4">
                                 <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4"checked/>
                                 <label class="form-check-label" for="form4Example4">Envoyez moi une copie de ce messsage</label>
-                            </div>
+                            </div> -->
 
                             <!-- Submit button -->
                             <button type="submit" class="btn btn-primary btn-md btn-block mb-4 w-50">Envoyer</button>
@@ -888,6 +890,7 @@
 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 
 </html>
